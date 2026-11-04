@@ -1,0 +1,16 @@
+# Card City — static site, no build step.
+[build]
+  publish = "."
+
+# Short, shareable link to the current payout guide.
+[[redirects]]
+  from = "/payout-guide"
+  to = "/images/payout-guide.pdf"
+  status = 301
+
+# Always serve the newest payout guide (no stale cached copies).
+[[headers]]
+  for = "/images/payout-guide.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Disposition = "inline; filename=\"Card-City-Payout-Guide.pdf\""

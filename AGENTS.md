@@ -29,6 +29,8 @@ The short link `cardcity.com/payout-guide` also points to this file (set in `net
 - `netlify.toml`, unless the user asks about redirects or caching.
 - The locations map. It's a keyless Google Maps embed built in `javascripts/all-ab9b3b57.js` from the addresses in the Locations section, so updating an address in `index.html` updates the map too. No API key is needed or should be added.
 
+- The footer copyright year. It updates itself every January; don't hard-code a year.
+
 ## Before you finish
 
 - Describe in plain language what changed, so the user can review the pull request before merging.

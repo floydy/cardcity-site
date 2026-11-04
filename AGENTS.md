@@ -27,7 +27,7 @@ The short link `cardcity.com/payout-guide` also points to this file (set in `net
 
 - The three contact forms: keep `data-netlify="true"`, the `form-name` hidden inputs, and the `bot-field` honeypot. Without them, form submissions stop arriving.
 - `netlify.toml`, unless the user asks about redirects or caching.
-- The Google Maps script tag and map code at the bottom of `index.html`.
+- The locations map. It's a keyless Google Maps embed built in `javascripts/all-ab9b3b57.js` from the addresses in the Locations section, so updating an address in `index.html` updates the map too. No API key is needed or should be added.
 
 ## Before you finish
 
